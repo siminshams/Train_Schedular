@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./Assets/CSS/Style.css">
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <title>Train Schedular</title>
 </head>
 
@@ -34,30 +33,57 @@
                                 <th scope="col">Minutes Away</th>
                             </tr>
                         </thead>
-                        <tbody id="result">
+                        <tbody id="results">
 
                         </tbody>
-                      
+
                     </table>
                 </div>
             </div>
-
-
         </div>
+
         <div class="row">
             <div class="col-12">
-                <p>Add Train</p>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Add Train</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="train-name">Train Name</label>
+                                <input type="text" class="form-control" id="train-name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="destination">Destination</label>
+                                <input type="text" class="form-control" id="destination">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="first-train-time">First Train Time (HH:mm-military time)</label>
+                                <input type="text" class="form-control" id="first-train-time">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="frequency">Frequency (min)</label>
+                                <input type="text" class="form-control" id="frequency">
+                            </div>
+
+                            <div>
+                                <input class="btn btn-primary" id="submit" type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-
         </div>
-
-
     </div>
-
-    </div>
-
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery.js"></script>
-<script type="text/javascript" src="./assets/javascript/app.js"></script>
 
 </html>
